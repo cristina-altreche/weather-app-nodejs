@@ -1,10 +1,7 @@
-console.log("Client side js file is loaded");
-
 const weatherForm = document.querySelector("form");
 const searchElement = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
 const messageTwo = document.querySelector("#message-2");
-
 
 // use form create event on submit
 weatherForm.addEventListener("submit", (e) => {
