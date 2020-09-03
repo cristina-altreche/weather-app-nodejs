@@ -10,6 +10,7 @@ const forecast = (long, lat, callback) => {
     } else if (res.error) {
       callback("Unable to connect to location", undefined);
     } else {
+      console.log(res.current);
       callback(
         undefined,
         `${res.current.weather_descriptions[0]}: It is currently ${res.current.temperature} degrees out. It feels like ${res.current.feelslike} degrees out. Humidity: ${res.current.humidity} and UV-Index: ${res.current.uv_index}`
